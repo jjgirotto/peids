@@ -1,0 +1,47 @@
+{
+    "utilizadores": [
+        {
+            "id": 1,
+            "username": "user123",
+            "nome": "João Silva",
+            "email": "joao@email.com",
+            "dataRegisto": "2023-01-15",
+            "posts": [
+                {
+                    "id": 101,
+                    "conteudo": "Este é o meu primeiro post!",
+                    "data": "2023-01-16",
+                    "likes": 10,
+                    "comentarios": [
+                        {
+                            "id": 1001,
+                            "user": "user456",
+                            "conteudo": "Parabéns pelo post!",
+                            "data": "2023-01-16"
+                        },
+                        {
+                            "id": 1002,
+                            "user": "user789",
+                            "conteudo": "Bem-vindo à plataforma!",
+                            "data": "2023-01-17"
+                        }
+                    ]
+                },
+                {
+                    "id": 102,
+                    "conteudo": "Adoro programar em Python.",
+                    "data": "2023-02-10",
+                    "likes": 25,
+                    "comentarios": [
+                        {
+                            "id": 1003,
+                            "user": "user321",
+                            "conteudo": "Python é realmente incrível!",
+                            "data": "2023-02-11"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

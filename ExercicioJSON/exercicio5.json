@@ -1,0 +1,61 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Camiseta",
+            "preco": 19.99,
+            "stock": 150,
+            "categorias": [
+                {
+                    "id": 1,
+                    "nome": "Roupas"
+                },
+                {
+                    "id": 2,
+                    "nome": "Básica"
+                }
+            ],
+            "encomendas": [
+                {
+                    "id": 1,
+                    "data": "2024-06-01",
+                    "cliente": "João Silva",
+                    "itens": 2,
+                    "total": 39.98
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Calça Jeans",
+            "preco": 49.99,
+            "stock": 80,
+            "categorias": [
+                {
+                    "id": 1,
+                    "nome": "Roupas"
+                },
+                {
+                    "id": 3,
+                    "nome": "Jeans"
+                }
+            ],
+            "encomendas": [
+                {
+                    "id": 2,
+                    "data": "2025-06-01",
+                    "cliente": "Ana Carolina",
+                    "itens": 1,
+                    "total": 49.99
+                },
+                {
+                    "id": 3,
+                    "data": "2025-06-02",
+                    "cliente": "Carlos Pereira",
+                    "itens": 2,
+                    "total": 99.98
+                }
+            ]
+        }
+    ]
+}

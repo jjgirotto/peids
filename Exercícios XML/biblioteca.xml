@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<biblioteca xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com biblioteca.xsd">
+    <livros>
+        <livro isbn="i123">
+            <titulo>Jogos Vorazes</titulo>
+            <autor>Suzanne Collins</autor>
+            <ano>2010</ano>
+            <preco>10.50</preco>
+        </livro>
+        <livro isbn="i124">
+            <titulo>Harry Potter</titulo>
+            <autor>J. K. Rowling</autor>
+            <ano>2001</ano>
+            <preco>11.50</preco>
+        </livro>
+    </livros>
+</biblioteca>

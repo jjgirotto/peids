@@ -1,0 +1,13 @@
+<!ELEMENT escola (professores, alunos)>
+<!ELEMENT professores (professor+)>
+<!ELEMENT professor (nome, disciplina)>
+<!ATTLIST professor id ID #REQUIRED>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT disciplina (#PCDATA)>
+<!ELEMENT alunos (aluno+)>
+<!ELEMENT aluno (nome, curso)>
+<!ATTLIST aluno numero ID #REQUIRED>
+<!ELEMENT curso (#PCDATA)>
+
+<!-- nome já está declarado em professor então não precisa declarar de novo -->
+<!-- adicionar o + quando tiver +1 elemento -->

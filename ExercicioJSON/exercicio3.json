@@ -1,0 +1,90 @@
+{
+    "cursos": [
+        {
+            "id": 1,
+            "nome": "Tecnologia e Programação",
+            "duracao": 3,
+            "disciplinas": [
+                {
+                    "id": 11,
+                    "nome": "Programação Visual",
+                    "creditos": 6,
+                    "professor": "Juliana Girotto",
+                    "estudantesInscritos": [
+                        {
+                            "numero": 2025111222,
+                            "nome": "Ana Clara",
+                            "email": "ana@email.com"
+                        },
+                        {
+                            "numero": 2025111221,
+                            "nome": "Bruno Lima",
+                            "email": "bruno@email.com"
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "nome": "Algoritmos",
+                    "creditos": 9,
+                    "professor": "Carlos Silva",
+                    "estudantesInscritos": [
+                        {
+                            "numero": 2025111224,
+                            "nome": "Vitória Falcão",
+                            "email": "vitoria@email.com"
+                        },
+                        {
+                            "numero": 2025111223,
+                            "nome": "Isadora Ribeiro",
+                            "email": "isadora@email.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Engenharia Informática",
+            "duracao": 2.5,
+            "disciplinas": [
+                {
+                    "id": 21,
+                    "nome": "Inteligência Artificial",
+                    "creditos": 5,
+                    "professor": "Gabriela Souza",
+                    "estudantesInscritos": [
+                        {
+                            "numero": 2025111227,
+                            "nome": "Felipe Simas",
+                            "email": "felipe@email.com"
+                        },
+                        {
+                            "numero": 2025111228,
+                            "nome": "José Aguiar",
+                            "email": "jose@email.com"
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "nome": "Sistemas Operativos",
+                    "creditos": 5,
+                    "professor": "Jorge Silva",
+                    "estudantesInscritos": [
+                        {
+                            "numero": 2025111229,
+                            "nome": "Samara Borges",
+                            "email": "samara@email.com"
+                        },
+                        {
+                            "numero": 2025111220,
+                            "nome": "Ricardo Pereira",
+                            "email": "ricardo@email.com"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

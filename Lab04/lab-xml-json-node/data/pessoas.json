@@ -1,0 +1,72 @@
+{
+    "pessoas": [
+        {
+            "idPessoa": 1,
+            "primeiroNome": "Niki",
+            "ultimoNome": "Lauda",
+            "sexo": "M",
+            "nif": 123543646,
+            "contactos": [
+                {
+                    "idContacto": 1,
+                    "contacto": "niki1@gmail.com"
+                },
+                {
+                    "idContacto": 2,
+                    "contacto": "niki2@gmail.com"
+                }
+            ]
+        },
+        {
+            "idPessoa": 2,
+            "primeiroNome": "James",
+            "ultimoNome": "Hunt",
+            "sexo": "M",
+            "nif": 457843567,
+            "contactos": [
+                {
+                    "idContacto": 3,
+                    "contacto": "hunt@yahoo.com"
+                }
+            ]
+        },
+        {
+            "idPessoa": 3,
+            "primeiroNome": "Jody",
+            "ultimoNome": "Scheckter",
+            "sexo": "M",
+            "nif": 467435678,
+            "contactos": [
+                {
+                    "idContacto": 4,
+                    "contacto": "jody@outlook.com"
+                }
+            ]
+        },
+        {
+            "idPessoa": 4,
+            "primeiroNome": "Alan",
+            "ultimoNome": "Jones",
+            "sexo": "M",
+            "nif": 346754900,
+            "contactos": [
+                {
+                    "idContacto": 5,
+                    "contacto": "jones1@hotmail.com"
+                },
+                {
+                    "idContacto": 6,
+                    "contacto": "jones2@hotmail.com"
+                }
+            ]
+        },
+        {
+            "idPessoa": 5,
+            "primeiroNome": "Nelson",
+            "ultimoNome": "Piquet",
+            "sexo": "M",
+            "nif": 226883256,
+            "contactos": []
+        }
+    ]
+}

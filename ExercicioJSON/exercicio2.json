@@ -1,0 +1,21 @@
+{
+    "primeiroNome": "Juliana",
+    "ultimoNome": "Leite",
+    "idade": 29,
+    "email": "ads.jjgirotto@gmail.com",
+    "hobbies": ["futebol", "música", "cinema"]
+}
+
+{
+    "produtoId": 1,
+    "nome": "Notebook",
+    "preco": 350.00,
+    "emStock": 10,
+    "categorias": ["eletrônicos", "computadores"],
+    "detalhes": {
+        "marca": "Dell",
+        "modelo": "Inspiron 15",
+        "processador": "Intel i7",
+        "memoriaRAM": "16GB"
+    }
+}

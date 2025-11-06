@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<produto xmlns:arm="https://exemplo.com/armazem"
+         xmlns:cli="https://exemplo.com/cliente">
+    <arm:Notebook prodRef="p1">
+        <arm:Quantidade>10</arm:Quantidade>
+        <arm:PrecoCusto>500</arm:PrecoCusto>
+    </arm:Notebook>
+    <cli:Notebook pId="1">
+        <cli:Nome>Notebook Dell</cli:Nome>
+        <cli:PrecoVenda>600</cli:PrecoVenda>
+    </cli:Notebook>
+</produto>

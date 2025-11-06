@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE escola SYSTEM "escola.dtd">
+<escola>
+    <professores>
+        <professor id="p1">
+            <nome>Fabiana</nome>
+            <disciplina>Programação e Integração de Serviços</disciplina>
+        </professor>
+        <professor id="p2">
+            <nome>José</nome>
+            <disciplina>Programação Visual</disciplina>
+        </professor>
+    </professores>
+    <alunos>
+        <aluno numero="a1">
+            <nome>Juliana Girotto Leite</nome>
+            <curso>Tecnologia e Programação de Sistemas</curso>
+        </aluno>
+        <aluno numero ="a2">
+            <nome>Diogo Alves</nome>
+            <curso>Tecnologia e Programação de Sistemas</curso>
+        </aluno>
+    </alunos>
+</escola>

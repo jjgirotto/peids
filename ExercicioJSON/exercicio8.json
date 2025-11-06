@@ -1,0 +1,48 @@
+{
+  "localizacao": {
+    "cidade": "Setúbal",
+    "pais": "Portugal",
+    "coordenadas": {
+      "latitude": 38.5244,
+      "longitude": -8.8882
+    }
+  },
+  "condicoesAtuais": {
+    "temperatura": 22,
+    "humidade": 78
+  },
+  "previsao5dias": [
+    {
+      "data": "2025-08-01",
+      "tempMin": 18,
+      "tempMax": 25
+    },
+    {
+      "data": "2025-08-02",
+      "tempMin": 17,
+      "tempMax": 24
+    },
+    {
+      "data": "2025-08-03",
+      "tempMin": 16,
+      "tempMax": 23
+    },
+    {
+      "data": "2025-08-04",
+      "tempMin": 15,
+      "tempMax": 22
+    },
+    {
+      "data": "2025-08-05",
+      "tempMin": 16,
+      "tempMax": 24
+    }
+  ],
+  "alertas": [
+    {
+      "tipo": "Vento Forte",
+      "severidade": 6,
+      "descricao": "Ventos de até 60 km/h esperados na região costeira."
+    }
+  ]
+}

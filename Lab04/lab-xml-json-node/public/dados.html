@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dados</title>
+</head>
+<body>
+    <select name="formato" id="formato">
+        <option value="json">Ver Dados em JSON</option>
+        <option value="xml">Ver Dados em XML</option>
+    </select>
+    <button onclick="carregar()">Carregar</button>
+    <a href="index.html">Voltar</a>
+    <pre id="output"></pre>
+    <script>
+        const output = document.getElementById('output');
+        async function carregarJson() {
+            const resposta = await fetch('/api/json');
+            const dados = await resposta.json();
+            output.innerText = JSON.stringify(dados, null, 2);
+        }
+        async function carregarXml() {
+            const resposta = await fetch('/api/xml');
+            const texto = await resposta.text();
+            output.innerText = texto;
+        }
+        function carregar() {
+            const formato = document.getElementById('formato').value;
+            if (formato === 'json') {
+                carregarJson();
+            } else if (formato === 'xml') {
+                carregarXml();
+            }
+        }
+    </script>
+
+</body>
+</html>

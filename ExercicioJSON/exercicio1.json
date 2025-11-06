@@ -1,0 +1,23 @@
+{
+    "nome": "João Silva",
+    "idade": 25,
+    "ativo": true,
+    "cursos": ["Matemática", "História"]
+}
+
+{
+    "empresa": "Tech Solutions",
+    "funcionarios":
+    [
+        {
+            "id": 1, 
+            "nome": "Ana", 
+            "salario": 1500
+        },
+        {
+            "id": 2, 
+            "nome": "Carlos", 
+            "salario": 1700
+        }
+    ]
+}

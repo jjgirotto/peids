@@ -1,0 +1,21 @@
+{
+    "clientes": [
+        {
+          "id": 101,
+          "nome": "Maria Silva"
+        }
+    ],
+    "produtos": [
+        {
+          "id": 201,
+          "nome": "Telemóvel"
+        }
+    ],
+  "encomendas": [
+      {
+        "id": 1,
+        "clienteId": 101,
+        "produtos": [201]
+      }
+  ]
+}
