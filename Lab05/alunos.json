@@ -1,0 +1,42 @@
+[
+  {
+    "numero": "10000001",
+    "nome": "Anacleto",
+    "morada": "Rua do Anacleto"
+  },
+  {
+    "numero": "10000002",
+    "nome": "Beatriz",
+    "morada": "Rua da Beatriz"
+  },
+  {
+    "numero": "10000003",
+    "nome": "David",
+    "morada": "Rua do David"
+  },
+  {
+    "numero": "10000004",
+    "nome": "Diogo",
+    "morada": "Rua do Diogo"
+  },
+  {
+    "numero": "10000005",
+    "nome": "Manuela",
+    "morada": "Rua da Manuela"
+  },
+  {
+    "numero": "1",
+    "nome": "Juliana",
+    "morada": "Av 22 Dezembro 25"
+  },
+  {
+    "numero": "1",
+    "nome": "Ana",
+    "morada": "Rua da Ana"
+  },
+  {
+    "numero": "2",
+    "nome": "Vitória",
+    "morada": "Rua da Vitória"
+  }
+]
