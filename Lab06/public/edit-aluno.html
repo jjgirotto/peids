@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Aluno</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form-get-aluno.html">Formulário GET</a></li>
+        <li><a href="form-post-aluno.html">Formulário POST</a></li>
+        <li><a href="alunos.html">Alunos</a></li>
+    </ul>
+</nav>
+
+<h1>Editar Aluno</h1>
+
+<form id="formEditar">
+    <label for="numero">Número:</label>
+    <input type="number" id="numero" name="numero" readonly>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="morada">Morada:</label>
+    <input type="text" id="morada" name="morada">
+
+    <button type="submit">Salvar</button>
+</form>
+
+<script>
+const params = new URLSearchParams(location.search);
+const numero = params.get("numero");
+fetch(`/api/aluno/${numero}`)
+    .then(r => r.json())
+    .then(a => {
+        document.getElementById("numero").value = a.numero;
+        document.getElementById("nome").value = a.nome;
+        document.getElementById("morada").value = a.morada;
+    });
+
+document.getElementById("formEditar").addEventListener("submit", e => {
+    e.preventDefault();
+
+    const alunoAtualizado = {
+        numero: document.getElementById("numero").value,
+        nome: document.getElementById("nome").value,
+        morada: document.getElementById("morada").value
+    };
+
+    fetch(`/api/aluno/${numero}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(alunoAtualizado)
+    }).then(r => {
+        if (r.ok) {
+            window.location.href = "alunos.html";
+        } else {
+            alert("Erro ao atualizar.");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

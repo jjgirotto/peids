@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/default.css">
+    <title>Express JS</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form-get-aluno.html">Formulário GET</a></li>
+            <li><a href="form-post-aluno.html">Formulário POST</a></li>
+            <li><a href="alunos.html">Alunos</a></li>
+        </ul>
+    </nav>
+
+    <h1>Gestão de Alunos</h1>
+    <h1>Lista de Alunos</h1>
+
+<table id="tabelaAlunos">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Número</th>
+            <th>Morada</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+    const API = "http://localhost:8081/api/aluno";
+    let alunoAtual = null;
+
+    async function carregarAlunos() {
+        const resp = await fetch(API);
+        const alunos = await resp.json();
+
+        const tbody = document.querySelector("#tabelaAlunos tbody");
+        tbody.innerHTML = "";
+
+        alunos.forEach(a => {
+            const tr = document.createElement("tr");
+
+            tr.innerHTML = `
+                <td>${a.nome}</td>
+                <td>${a.numero}</td>
+                <td>${a.morada}</td>
+                <td>
+                    <button onclick="editar(${a.numero})">Editar</button>
+                    <button onclick="deletar(${a.numero})">Excluir</button>
+                </td>
+            `;
+
+            tbody.appendChild(tr);
+        });
+    }
+
+    function editar(num) {
+        window.location.href = `edit-aluno.html?numero=${num}`;
+    }
+
+    async function deletar(num) {
+        await fetch(`${API}/${num}`, { method: "DELETE" });
+        carregarAlunos();
+    }
+
+    carregarAlunos();
+</script>
+</body>
+</html>
