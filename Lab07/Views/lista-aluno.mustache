@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{>menu}}
+    <table border="1">
+        <th colspan="2">{{ title }}</th>
+        <tr>
+            <td><b>{{labelId}}</b></td>
+            <td><b>{{labelNome}}</b></td>
+            <td><b>{{labelNumero}}</b></td>
+            <td><b>{{labelMorada}}</b></td>
+            <td><b>{{labelDetalhes}}</b></td>
+        </tr>
+        {{#alunos}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nome}}</td>
+            <td>{{numero}}</td>
+            <td>{{morada}}</td>
+            <td>
+            <a href="/aluno/details/{{id}}">
+                <img src="/images/details.png" alt="Detalhes">
+            </a>
+        </td>
+        </tr>
+        {{/alunos}}
+    </table>
+</body>
+</html>

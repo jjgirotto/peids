@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/default.css">
+</head>
+<body>
+    {{>menu}}
+    <h1>{{title}}</h1>
+    
+    <form>
+        <label>ID:</label>
+        <input type="text" value="{{aluno.id}}" disabled>
+
+        <label>Número:</label>
+        <input type="number" value="{{aluno.numero}}" name="numero">
+
+        <label>Nome:</label>
+        <input type="text" value="{{aluno.nome}}" name="nome">
+
+        <label>Morada:</label>
+        <input type="text" value="{{aluno.morada}}" name="morada">
+    </form>
+    
+    <a href="/lista-aluno">Voltar à Lista</a>
+</body>
+</html>
